@@ -1,22 +1,22 @@
-# Compiled class file
-*.class
+package eje;
 
-# Log file
-*.log
+import java.util.Scanner;
 
-# BlueJ files
-*.ctxt
+public class maximun {
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int premiere, deuxieme, laPlusGrande;
+Scanner lectureClavier = new Scanner(System.in);
+System.out.print("entrer une valeur :");
+premiere = lectureClavier.nextInt();
+System.out.print("entrer une deuxieme valeur :");
+deuxieme = lectureClavier.nextInt();
+if(premiere > deuxieme)
+{
+	//afficher  les valeurs dans l'ordre croisont
+	System.out.println(deuxieme + "   "   + premiere );
+	// stocker la plus grande  dans une variable specifique
+	laPlusGrande = premiere;
+}
+else
